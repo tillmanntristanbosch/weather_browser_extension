@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Wetter-Abfrage",
+  "version": "1.0",
+  "description": "Zeigt Temperatur oder Wetterbeschreibung vom lokalen Flask-Server an",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "http://127.0.0.1:5000/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Wetter abfragen"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wetter@example.com",
+      "strict_min_version": "58.0"
+    }
+  }
+}

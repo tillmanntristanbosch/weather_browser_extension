@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wetter-Abfrage</title>  <!-- Optional: Titel für bessere Barrierefreiheit -->
+  <style>
+    body { 
+      width: 320px; 
+      padding: 20px; 
+      font-family: sans-serif; 
+      text-align: center; 
+      margin: 0;
+    }
+    h2 { margin-bottom: 20px; }
+    button { 
+      width: 100%; 
+      margin: 10px 0; 
+      padding: 14px; 
+      font-size: 16px; 
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+    button:hover { background: #0056b3; }
+    #output { 
+      margin-top: 20px; 
+      padding: 15px; 
+      background: #f8f9fa; 
+      border-radius: 8px; 
+      min-height: 80px; 
+      white-space: pre-wrap; 
+      text-align: left;
+      border: 1px solid #dee2e6;
+    }
+    #status { 
+      color: #666; 
+      font-size: 12px; 
+      margin-top: 20px; 
+    }
+  </style>
+</head>
+<body>
+  <h2>Wetter-Abfrage</h2>
+  <button id="temp">Temperatur abrufen</button>
+  <button id="weather">Wetterbeschreibung abrufen</button>
+  <div id="output">Klicke auf einen Button, um Daten abzurufen...</div>
+  <div id="status">Server muss laufen: http://127.0.0.1:5000</div>
+  <script src="popup.js"></script>
+</body>
+</html>
